@@ -1,21 +1,9 @@
 {
-  "builds": [
-    {
-      "src": "main.py",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "15mb",
-        "runtime": "python3.12"
-      }
-    }
-  ],
+  "buildCommand": "pip install -r requirements.txt",
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "main.py"
+      "dest": "api/index.py"
     }
-  ],
-  "env": {
-    "OFFICIAL_EMAIL": "aditya0266.be23@chitkara.edu.in"
-  }
+  ]
 }
