@@ -129,3 +129,4 @@ async def bfhl(payload: dict):
         if isinstance(detail, dict) and detail.get("is_success") is False:
             return JSONResponse(status_code=he.status_code, content=detail)
         raise
+
