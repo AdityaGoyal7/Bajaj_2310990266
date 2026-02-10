@@ -1,7 +1,11 @@
 BFHL API
 
-Simple API. Run with:
+Simple Node.js API. Run with:
 
 ```
-uvicorn main:app --reload
+npm install
+npm start
 ```
+
+Test: `http://localhost:3000/health`
+

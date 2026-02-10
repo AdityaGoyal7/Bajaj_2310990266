@@ -1,9 +1,18 @@
 {
-  "buildCommand": "pip install -r requirements.txt",
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "api/index.py"
+      "dest": "api/index.js"
     }
-  ]
+  ],
+  "env": {
+    "OFFICIAL_EMAIL": "aditya0266.be23@chitkara.edu.in"
+  }
 }
